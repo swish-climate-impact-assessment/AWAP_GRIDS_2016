@@ -2,14 +2,15 @@
 'name:01-download-data-for-year'
 getwd()
 yy <- 2016
-projdir <- "~/ResearchData/AWAP_GRIDS/"
+projdir <- sprintf("~/projects/AWAP_GRIDS/AWAP_GRIDS_%s", yy)
+
 setwd(projdir)
 
 outdir <- sprintf("AWAP_GRIDS_%s", yy)
 print(outdir)
 #install.packages("devtools")
 #library(devtools)
-##install_github("swish-climate-impact-assessment/awaptools", ref = "develop")
+#install_github("swish-climate-impact-assessment/awaptools", ref = "develop")
 require(awaptools)
 library(raster)
 
