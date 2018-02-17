@@ -1,7 +1,7 @@
 'name:01-download-data-for-year'
 getwd()
 yy <- 2016
-projdir <- sprintf("~/projects/AWAP_GRIDS/AWAP_GRIDS_%s", yy)
+projdir <- sprintf("~/ResearchData/AWAP_GRIDS/AWAP_GRIDS_%s", yy)
 
 setwd(projdir)
 
@@ -15,3 +15,8 @@ library(raster)
 
 source("code/01-download-data-for-year.R")
 source("code/02-decompress-year.R")
+
+
+## monthly
+source("code/01-download-data-for-year-monthly.R")
+source("code/02-decompress-year-monthly.R")
