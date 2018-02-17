@@ -13,4 +13,3 @@ dat$year <- substr(dat$date,1,4)
 #table(dat$year)
 print(table(dat$year, dat$measure))
 setwd(projdir)
-

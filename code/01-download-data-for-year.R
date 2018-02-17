@@ -1,4 +1,3 @@
-
 dir.create("data_provided")
 setwd("data_provided")
 # get weather data, beware that each grid is a couple of megabytes
